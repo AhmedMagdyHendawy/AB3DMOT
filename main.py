@@ -333,7 +333,7 @@ class AB3DMOT(object):
     self.reorder = [3, 4, 5, 6, 2, 1, 0]
     self.reorder_back = [6, 5, 4, 0, 1, 2, 3]
 
-  def update(self,dets_all):
+  def update(self,dets_all,iou_threshold=0.1):
     """
     Params:
       dets_all: dict
